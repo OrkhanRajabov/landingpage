@@ -15,6 +15,7 @@ body {
 }
 
 .navbar {
+    z-index: 1;
     width: 100%;
     height: 84px;
     display: flex;
@@ -61,6 +62,9 @@ body {
     font-weight: 500;
     line-height: 20px;
 }
+.login-btn:hover{
+    color: #1d3621;
+}
 
 .signup-btn {
     background-color: #4CAF4F;
@@ -73,6 +77,9 @@ body {
     justify-content: center;
     border-radius: 6px;
 
+}
+.signup-btn:hover{
+    color: #1d3621;
 }
 
 .main-header .container {
@@ -106,6 +113,24 @@ body {
 .main-header-img img {
     width: 100%;
 }
+.main-header-img img{
+    animation: imageanim 2s linear infinite;
+    position: relative;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+}
+@keyframes imageanim {
+    0% ,100%{
+        bottom: 0;
+      }
+      
+      65% {
+        bottom: 20px;
+     
+      }
+    }
+
 
 .main-header-text,
 .clients-subheader {
@@ -177,6 +202,17 @@ body {
     color: #fff;
     background-color: #4CAF4F;
     border-radius: 4px;
+}
+.third-section-image img{
+    animation: imageanim 2s linear infinite;
+    position: relative;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+}
+.btns:hover{
+    
+    color: #1d3621;
 }
 
 
@@ -257,7 +293,7 @@ body {
     color: #4CAF4F;
 }
 .fourth-section .right {
-    
+       
     width: 540px;
     height: 160px;
     font-size: 14px;
@@ -270,8 +306,14 @@ body {
     column-gap: 200px;
 }
 .fourth-section .right img{
+    
     width: 48px;
     height: 48px;
+}
+.fourth-section .right img:hover{
+    width: 50px;
+    height: 50px;
+    
 }
 .fourth-section .right .al{
    
@@ -360,6 +402,7 @@ body {
         width: 80px;
         height: 80px;
     }
+    
 }
 
 .scroll {
@@ -419,3 +462,4 @@ body {
     display: none;
     right: 30px;
 }
+    
